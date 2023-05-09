@@ -1,0 +1,6 @@
+.nav-link, .navbar-brand{
+        color: #fff;
+}
+nav{
+        border-top: 2px solid red;
+}
