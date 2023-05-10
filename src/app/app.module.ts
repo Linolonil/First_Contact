@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SobreComponent } from './components/sobre/sobre.component';
-import { VagasComponent } from './components/vagas/vagas.component';
 import { ContatoComponent } from './components/contato/contato.component';
-import { FormComponent } from './components/form/form.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { ObjetivoComponent } from './components/objetivo/objetivo.component';
+import { CadastroFormComponent } from './components/cadastro-form/cadastro-form.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,10 @@ import { FormComponent } from './components/form/form.component';
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
-    SobreComponent,
-    VagasComponent,
     ContatoComponent,
-    FormComponent
+    CadastroComponent,
+    ObjetivoComponent,
+    CadastroFormComponent,
   ],
   imports: [
     BrowserModule,
