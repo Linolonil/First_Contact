@@ -1,12 +1,43 @@
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+h4 {
+  font-size: 1rem;
+}
+img {
+  height: 1.7rem;
+}
+h2 {
+  color: #ff5252;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.container {
+  text-align: center;
+  padding: 2rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  position: relative;
+  padding: 2rem;
+}
 .contact-section {
   padding-top: 1rem;
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #ff0000;
 }
 .contact-section .card h4,
 .contact-section .card .h4 {
@@ -19,7 +50,6 @@ html {
 }
 .contact-section .card hr {
   opacity: 1;
-  border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -40,4 +70,14 @@ html {
 }
 .contact-section .social a:active {
   color: #fff;
+}
+.bg-sobra:hover {
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 20px 20px 20px red;
+}
+.bnt-whats {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
 }

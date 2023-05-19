@@ -9,7 +9,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContatoComponent } from './components/contato/contato.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { ObjetivoComponent } from './components/objetivo/objetivo.component';
-import { CadastroFormComponent } from './components/cadastro-form/cadastro-form.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +18,9 @@ import { CadastroFormComponent } from './components/cadastro-form/cadastro-form.
     FooterComponent,
     ContatoComponent,
     CadastroComponent,
-    ObjetivoComponent,
-    CadastroFormComponent
-  ],
-  imports: [
+    ObjetivoComponent
+    ],  
+    imports: [
     BrowserModule,
     AppRoutingModule,
   ],

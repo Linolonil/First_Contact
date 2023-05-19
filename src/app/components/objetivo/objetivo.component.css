@@ -4,16 +4,20 @@ html {
 
 h2 {
   color: #ff5252;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
 }
 
 p {
   margin-top: 1rem;
   text-align: justify;
-  color: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
+
 p:hover,
 h2:hover {
   cursor: pointer;
@@ -29,18 +33,18 @@ h2:hover {
   margin: auto;
   position: relative;
   text-align: center;
-  background-color: gray;
-  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0.896796218487395) 27%,
+    rgba(0, 0, 0, 0.896796218487395) 66%,
+    rgba(252, 0, 0, 1) 76%
+  );
 }
 
 .about-section {
-  padding: 5rem ;
-  background: linear-gradient(
-    to bottom,
-    #000 0%,
-    rgba(0, 0, 0, 0.9) 75%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
+  padding: 5rem;
+  background: #636464;
 }
 
 .jovem {

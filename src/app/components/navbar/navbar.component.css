@@ -22,7 +22,7 @@
 
 nav {
   border-top: 2px solid red;
-  height: 3rem;
+  height: 4.5rem;
 }
 
 .nav-link {
@@ -76,7 +76,7 @@ nav {
   }
 
   #mainNav .navbar-brand {
-    padding: 0.8rem 0;
+    padding: 1rem 0;
     color: rgba(255, 255, 255, 0);
     transition: all 1000ms ease-in-out;
   }
@@ -105,11 +105,8 @@ nav {
     font-size: 1.5rem;
     line-height: 1.5rem;
     letter-spacing: 0.4rem;
-    background: linear-gradient(
-      rgb(255, 255, 255),
-      #ffb1b1,
-      rgba(255, 255, 255, 0.202)
-    );
+    background: -webkit-linear-gradient(#ff0000, #ff1111, #ff0000);
+
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
