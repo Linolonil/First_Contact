@@ -20,11 +20,11 @@ import { CadastroFormComponent } from './components/cadastro-form/cadastro-form.
     ContatoComponent,
     CadastroComponent,
     ObjetivoComponent,
-    CadastroFormComponent,
+    CadastroFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

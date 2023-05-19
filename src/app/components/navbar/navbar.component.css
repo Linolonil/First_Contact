@@ -1,38 +1,38 @@
-.nav-link,
-.navbar-brand {
-  color: #fff;
-}
-nav {
-  border-top: 2px solid red;
-  background-color: rgba(255, 255, 255, 1);
-}
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-a:hover {
-  opacity: 0.9;
-}
-.nav-link {
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+/* Adicione esta classe para destacar o link ativo */
+.navbar-nav .nav-item.active .nav-link {
+  color: blue;
 }
 
-/*  */
-nav.bg {
-  width: 100%;
-  float: center;
-  text-align: center;
+/* Adicione estas classes para criar a transição suave dos links */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s, border-bottom 1s;
 }
-nav a:hover,
-nav a:focus {
-  transition: 0.8s;
-  outline: none;
-  color: gray;
+
+/* Ajuste a cor dos links ao passar o mouse sobre eles */
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgba(128, 128, 128, 0.637);
 }
-/* Menu */
+
+/* Ajuste a cor dos links quando estão focados */
+.navbar-nav .nav-item .nav-link:focus {
+  color: rgb(128, 128, 128);
+}
+
+/* Restante do código CSS que você forneceu */
+
+nav {
+  border-top: 2px solid red;
+  height: 3rem;
+}
+
+.nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
 .menu-nav a::before,
 .menu-nav a::after {
   opacity: 0;
@@ -41,6 +41,7 @@ nav a:focus {
   -moz-transition: -moz-transform 0.4s, opacity 0.2s;
   transition: transform 0.4s, opacity 0.2s;
 }
+
 .menu-nav a::before {
   content: "[";
   margin-right: 10px;
@@ -48,6 +49,7 @@ nav a:focus {
   -moz-transform: translateX(20px);
   transform: translateX(20px);
 }
+
 .menu-nav a::after {
   content: "]";
   margin-left: 10px;
@@ -55,6 +57,7 @@ nav a:focus {
   -moz-transform: translateX(-20px);
   transform: translateX(-20px);
 }
+
 .menu-nav a:hover::before,
 .menu-nav a:hover::after,
 .menu-nav a:focus::before,
@@ -64,77 +67,80 @@ nav a:focus {
   -moz-transform: translateX(0px);
   transform: translateX(0px);
 }
-#mainNav {
-  min-height: 3.5rem;
-  background-color: #fff;
-}
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
-}
-#mainNav .navbar-toggler:focus {
-  outline: none;
-}
-#mainNav .navbar-brand {
-  color: #000;
-  font-weight: 700;
-  padding: 0.9rem 0;
-}
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
-  outline: none;
-  background-color: transparent;
-}
-#mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
-}
+
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 0;
-    padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 1s ease-in-out;
   }
+
   #mainNav .navbar-brand {
-    padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    padding: 0.8rem 0;
+    color: rgba(255, 255, 255, 0);
+    transition: all 1000ms ease-in-out;
   }
+
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
+
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
   }
+
   #mainNav .nav-link:active {
     color: #fff;
   }
+
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #2d2d2d;
   }
+
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4rem;
+    background: linear-gradient(
+      rgb(255, 255, 255),
+      #ffb1b1,
+      rgba(255, 255, 255, 0.202)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: all 1s ease-in-out;
   }
-  #mainNav.navbar-shrink .nav-link {
-    color: #000;
-    padding: 1.5rem 1.5rem 1.25rem;
-    border-bottom: 0.25rem solid transparent;
-  }
-  #mainNav.navbar-shrink .nav-link:hover {
-    color: blue;
-  }
-  #mainNav.navbar-shrink .nav-link:active {
-    color: blue;
-  }
-  #mainNav.navbar-shrink .nav-link.active {
-    color: blue;
-    outline: none;
-    border-bottom: 0.25rem solid blue;
-  }
+}
+
+#mainNav.navbar-shrink .nav-link {
+  color: #ffffff;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+  color: #c0c0c082;
+}
+
+#mainNav.navbar-shrink .nav-link:active {
+  color: #222222;
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+  color: #ff5252;
+  outline: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.icon {
+  height: 1.5rem;
+  color: #ffffff;
 }
