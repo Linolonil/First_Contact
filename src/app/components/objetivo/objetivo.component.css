@@ -1,10 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: #ff5252;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+}
+
+p {
+  margin-top: 1rem;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+p:hover,
+h2:hover {
+  cursor: pointer;
+}
+
+.block-objetivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  position: relative;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    60deg,
+    rgba(0, 0, 0, 0.896796218487395) 27%,
+    rgba(0, 0, 0, 0.896796218487395) 66%,
+    rgba(0, 0, 255, 0.486) 80%
+  );
+}
+
 .about-section {
-    padding-top: 10rem;
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-  }
-  .about-section p {
-    margin-bottom: 5rem;
-  }
-  .jovem{
-    height: auto;
-  }
+  padding: 5rem;
+  background: #000000;
+}
+
+.jovem {
+  height: auto;
+}

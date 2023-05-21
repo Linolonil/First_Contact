@@ -1,4 +1,10 @@
-# MyFirstProject
+# First Contact
+![localhost_4200_ (1)](https://github.com/Linolonil/First_Contact/assets/109708821/7b5190e8-711d-45a7-983e-7578f27d1438)
+
+## Sobre o Projeto
+First Contact é um projeto de desenvolvimento de um sistema web para armazenamento de currículos para vagas de estágio. O objetivo do projeto é simplificar a busca e o cadastro de currículos para estudantes que desejam estagiar.
+
+O sistema é construído utilizando as tecnologias HTML, CSS, JavaScript, AngularJS e Bootstrap, além de contar com um back-end desenvolvido em c# e um banco de dados MySQL.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 
