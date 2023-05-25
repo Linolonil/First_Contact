@@ -4,16 +4,11 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.192) 0%,
-      rgba(0, 0, 0, 0.7) 75%,
-      #000000 100%
-    ),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 15%, #000000 100%),
     url("../../../assets/img/bg-masthead.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: local;
   background-size: cover;
 }
 .masthead h1,
@@ -31,7 +26,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0.1em 0.1em 0.2em black;
+  text-shadow: 0.1em 0.1em 0.2em #ffffff1a;
   -webkit-text-fill-color: #ffb0b044;
   -webkit-background-clip: text;
   background-clip: text;
@@ -60,7 +55,6 @@
     font-size: 7.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
-    
   }
   .masthead h2,
   .masthead .h2 {

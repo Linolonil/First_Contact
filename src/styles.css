@@ -20,5 +20,5 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: rgba(17, 0, 255, 0.411);
 }

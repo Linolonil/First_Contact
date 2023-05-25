@@ -7,6 +7,7 @@
 }
 nav {
   height: 3.5rem;
+  transition: all 2s ease-in-out;
 }
 .hidden {
   opacity: 0;
@@ -62,11 +63,6 @@ nav {
     transition: background-color 1s ease-in-out;
   }
 
-  #mainNav .navbar-brand {
-    padding: 1rem 0;
-    color: rgba(255, 255, 255, 0);
-    transition: all 1000ms ease-in-out;
-  }
 
   #mainNav .nav-link {
     transition: none;
@@ -82,7 +78,9 @@ nav {
   }
 
   #mainNav.navbar-shrink {
-    background-color: #2d2d2d;
+    background-color: #000000;
+    box-shadow: 0 0 15px #5a5a5a81;
+    transition: all 2s ease-in-out;
   }
 
   #mainNav.navbar-shrink .navbar-brand {

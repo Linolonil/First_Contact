@@ -40,3 +40,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+
+  var form = document.getElementById("form-curriculo");
+  var cpfInput = document.getElementById("cpf-user");
+  var nomeInput = document.getElementById("nome-user");
+  var fileInput = document.getElementById("file-user");
+
+  var mensagemSucesso = document.getElementById("mensagem-sucesso");
+
+  document.getElementById("btn-salvar").addEventListener("click", function () {
+    // Limpar os campos do formulário
+    cpfInput.value = "";
+    nomeInput.value = "";
+    fileInput.value = "";
+
+    // Exibir a mensagem de sucesso
+    mensagemSucesso.style.display = "block";
+
+    // Ocultar a mensagem de sucesso após 2 segundos
+    setTimeout(function () {
+      mensagemSucesso.style.display = "none";
+    }, 3000);
+  });
+
+  // Limpar a mensagem de sucesso quando o modal for fechado
+  modal._element.addEventListener("hidden.bs.modal", function () {
+    mensagemSucesso.style.display = "none";
+  });
+});

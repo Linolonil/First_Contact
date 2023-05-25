@@ -23,8 +23,12 @@ p:hover,
 h2:hover {
   cursor: pointer;
 }
+.response {
+  color: #fff;
+  background-color: #fff;
+}
 .projects-section {
-  background:#000000
+  background: #000000;
 }
 .title {
   font-size: 28px;
