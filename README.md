@@ -1,5 +1,5 @@
 # First Contact
-![localhost_4200_ (1)](https://github.com/Linolonil/First_Contact/assets/109708821/7b5190e8-711d-45a7-983e-7578f27d1438)
+![localhost_4200_ (2)](https://github.com/Linolonil/First_Contact/assets/109708821/aa46ab1a-0ce1-4761-9d28-e64b1678c773)
 
 ## Sobre o Projeto
 First Contact é um projeto de desenvolvimento de um sistema web para armazenamento de currículos para vagas de estágio. O objetivo do projeto é simplificar a busca e o cadastro de currículos para estudantes que desejam estagiar.
